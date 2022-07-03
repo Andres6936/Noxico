@@ -99,8 +99,6 @@
     <Reference Include="System.Windows.Forms" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BoardChar.cs"/>
-    <Compile Include="BoardDrawing.cs"/>
     <Compile Include="Character.cs"/>
     <Compile Include="Color.cs"/>
     <Compile Include="CryptStream.cs"/>
@@ -109,6 +107,9 @@
     <Compile Include="Descriptions.cs"/>
     <Compile Include="Dijkstra.cs"/>
     <Compile Include="DungeonGenerator.cs"/>
+    <Compile Include="Engine\Board\Board.cs"/>
+    <Compile Include="Engine\Board\BoardChar.cs"/>
+    <Compile Include="Engine\Board\BoardDrawing.cs"/>
     <Compile Include="Engine\Board\BoardType.cs"/>
     <Compile Include="Engine\Board\Fluids.cs"/>
     <Compile Include="Engine\Board\Point.cs"/>
@@ -130,6 +131,17 @@
     </Compile>
     <Compile Include="Engine\MainForm.cs"/>
     <Compile Include="Engine\MixFileEntry.cs"/>
+    <Compile Include="Engine\Subscreens\ActionList.cs"/>
+    <Compile Include="Engine\Subscreens\ContainerMan.cs"/>
+    <Compile Include="Engine\Subscreens\Controls.cs"/>
+    <Compile Include="Engine\Subscreens\Crafting.cs"/>
+    <Compile Include="Engine\Subscreens\Introduction.cs"/>
+    <Compile Include="Engine\Subscreens\Inventory.cs"/>
+    <Compile Include="Engine\Subscreens\MessageBox.cs"/>
+    <Compile Include="Engine\Subscreens\Options.cs"/>
+    <Compile Include="Engine\Subscreens\Pause.cs"/>
+    <Compile Include="Engine\Subscreens\TextScroller.cs"/>
+    <Compile Include="Engine\Subscreens\Travel.cs"/>
     <Compile Include="Engine\UpdateForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -156,21 +168,16 @@
     <Compile Include="PlayerChar.cs"/>
     <Compile Include="SexManager.cs"/>
     <Compile Include="SoundSystem.cs"/>
-    <Compile Include="Subscreens\ActionList.cs"/>
-    <Compile Include="Subscreens\Controls.cs"/>
-    <Compile Include="Subscreens\Crafting.cs"/>
-    <Compile Include="Subscreens\Options.cs"/>
     <Compile Include="WinFormHost.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Game.cs" />
-    <Compile Include="IGameHost.cs" />
-    <Compile Include="IniFile.cs" />
-    <Compile Include="InventoryItem.cs" />
-    <Compile Include="Mix.cs" />
-    <Compile Include="Randomizer.cs" />
-    <Compile Include="Subscreens\Travel.cs" />
-    <Compile Include="Tokens.cs" />
+    <Compile Include="Game.cs"/>
+    <Compile Include="IGameHost.cs"/>
+    <Compile Include="IniFile.cs"/>
+    <Compile Include="InventoryItem.cs"/>
+    <Compile Include="Mix.cs"/>
+    <Compile Include="Randomizer.cs"/>
+    <Compile Include="Tokens.cs"/>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -180,17 +187,10 @@
     <Compile Include="Scenes.cs" />
     <Compile Include="ShadowCaster.cs" />
     <Compile Include="Subscreens.cs" />
-    <Compile Include="Subscreens\ContainerMan.cs" />
-    <Compile Include="Subscreens\Introduction.cs" />
-    <Compile Include="Subscreens\Inventory.cs" />
-    <Compile Include="Subscreens\MessageBox.cs" />
-    <Compile Include="Subscreens\Pause.cs" />
-    <Compile Include="Subscreens\TextScroller.cs" />
     <Compile Include="Toolkit.cs" />
     <Compile Include="UI.cs" />
     <Compile Include="Vista.cs" />
     <Compile Include="WorldGen.cs" />
-    <Compile Include="Board.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
