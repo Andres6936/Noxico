@@ -30,7 +30,8 @@ namespace Noxico
             // Load of own binary format where the information of files is stored
             var mixFiles = new List<string>() {mainFile + ".nox"};
             // Load all files with extension .nox
-            mixFiles.AddRange(Directory.EnumerateFiles(".", "*.nox").Select(x => x.Substring(2))
+            mixFiles.AddRange(Directory.EnumerateFiles(".", "*.nox")
+                .Select(x => x.Substring(2))
                 .Where(x => !x.Equals(mainFile + ".nox", StringComparison.OrdinalIgnoreCase)));
             Program.WriteLine("Mix Files enumerated. Indexing contents...");
 
