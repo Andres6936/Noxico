@@ -100,13 +100,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Character.cs"/>
-    <Compile Include="Color.cs"/>
     <Compile Include="CryptStream.cs"/>
-    <Compile Include="Culture.cs"/>
     <Compile Include="Cursor.cs"/>
     <Compile Include="Descriptions.cs"/>
     <Compile Include="Engine\Algorithms\Dijkstra.cs"/>
     <Compile Include="Engine\Algorithms\DungeonGenerator.cs"/>
+    <Compile Include="Engine\Algorithms\Randomizer.cs"/>
     <Compile Include="Engine\Algorithms\WorldGen.cs"/>
     <Compile Include="Engine\Board\Board.cs"/>
     <Compile Include="Engine\Board\BoardChar.cs"/>
@@ -126,19 +125,13 @@
     <Compile Include="Engine\Config\Lua.cs"/>
     <Compile Include="Engine\Config\Mix.cs"/>
     <Compile Include="Engine\Config\MixFileEntry.cs"/>
-    <Compile Include="Engine\Editor.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="Engine\Entity\Entities.cs"/>
     <Compile Include="Engine\Entity\Morph.cs"/>
     <Compile Include="Engine\Entity\PlayerChar.cs"/>
-    <Compile Include="Engine\ErrorForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Engine\ErrorForm.Designer.cs">
-      <DependentUpon>ErrorForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Engine\MainForm.cs"/>
+    <Compile Include="Engine\Mechanism\Culture.cs"/>
+    <Compile Include="Engine\Mechanism\Game.cs"/>
+    <Compile Include="Engine\Mechanism\SexManager.cs"/>
+    <Compile Include="Engine\Mechanism\ShadowCaster.cs"/>
     <Compile Include="Engine\Subscreens\ActionList.cs"/>
     <Compile Include="Engine\Subscreens\ContainerMan.cs"/>
     <Compile Include="Engine\Subscreens\Controls.cs"/>
@@ -150,16 +143,27 @@
     <Compile Include="Engine\Subscreens\Pause.cs"/>
     <Compile Include="Engine\Subscreens\TextScroller.cs"/>
     <Compile Include="Engine\Subscreens\Travel.cs"/>
+    <Compile Include="Engine\UI\Color.cs"/>
+    <Compile Include="Engine\UI\Editor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Engine\UI\ErrorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Engine\UI\ErrorForm.Designer.cs">
+      <DependentUpon>ErrorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Engine\UI\MainForm.cs"/>
     <Compile Include="Engine\UI\Subscreens.cs"/>
     <Compile Include="Engine\UI\Toolkit.cs"/>
     <Compile Include="Engine\UI\UI.cs"/>
-    <Compile Include="Engine\UI\Vista.cs"/>
-    <Compile Include="Engine\UpdateForm.cs">
+    <Compile Include="Engine\UI\UpdateForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Engine\UpdateForm.Designer.cs">
+    <Compile Include="Engine\UI\UpdateForm.Designer.cs">
       <DependentUpon>UpdateForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Engine\UI\Vista.cs"/>
     <Compile Include="fmod.cs"/>
     <Content Include="Guides\ref.png"/>
     <Content Include="Guides\ref.txt"/>
@@ -173,15 +177,12 @@
     <Content Include="mix\lookup.txt"/>
     <None Include="mix\clutter.tml"/>
     <Compile Include="Name.cs"/>
-    <Compile Include="SexManager.cs"/>
     <Compile Include="SoundSystem.cs"/>
-    <Compile Include="WinFormHost.cs">
+    <Compile Include="App.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Game.cs"/>
     <Compile Include="IGameHost.cs"/>
     <Compile Include="InventoryItem.cs"/>
-    <Compile Include="Randomizer.cs"/>
     <Compile Include="Tokens.cs"/>
     <Compile Include="Properties\AssemblyInfo.cs"/>
     <Compile Include="Properties\Resources.Designer.cs">
@@ -190,7 +191,6 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <Compile Include="Scenes.cs"/>
-    <Compile Include="ShadowCaster.cs"/>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
