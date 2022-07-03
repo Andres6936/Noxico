@@ -102,27 +102,28 @@
     <Compile Include="BoardChar.cs" />
     <Compile Include="BoardDrawing.cs" />
     <Compile Include="Character.cs" />
-    <Compile Include="Color.cs" />
-    <Compile Include="CryptStream.cs" />
-    <Compile Include="Culture.cs" />
-    <Compile Include="Cursor.cs" />
-    <Compile Include="Descriptions.cs" />
-    <Compile Include="Dijkstra.cs" />
-    <Compile Include="DungeonGenerator.cs" />
+    <Compile Include="Color.cs"/>
+    <Compile Include="CryptStream.cs"/>
+    <Compile Include="Culture.cs"/>
+    <Compile Include="Cursor.cs"/>
+    <Compile Include="Descriptions.cs"/>
+    <Compile Include="Dijkstra.cs"/>
+    <Compile Include="DungeonGenerator.cs"/>
     <Compile Include="Editor.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Engine\MainForm.cs"/>
-    <Compile Include="Entities.cs" />
+    <Compile Include="Engine\MixFileEntry.cs"/>
+    <Compile Include="Entities.cs"/>
     <Compile Include="ErrorForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ErrorForm.Designer.cs">
       <DependentUpon>ErrorForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="fmod.cs" />
-    <Compile Include="i18n.cs" />
-    <Content Include="Guides\ref.png" />
+    <Compile Include="fmod.cs"/>
+    <Compile Include="i18n.cs"/>
+    <Content Include="Guides\ref.png"/>
     <Content Include="Guides\ref.txt" />
     <Content Include="mix\fonts\8x16-bold.png" />
     <None Include="mix\defense.lua" />

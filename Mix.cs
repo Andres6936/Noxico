@@ -4,6 +4,8 @@ using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Text;
+using Noxico.Engine;
+
 //using System.Xml;
 
 namespace Noxico
@@ -372,13 +374,6 @@ namespace Noxico
             }
 
             Program.WriteLine("All entries in mix files extracted. Happy Hacking.");
-        }
-
-        private class MixFileEntry
-        {
-            public bool IsCompressed;
-            public string MixFile, Filename;
-            public int Offset, Length;
         }
     }
 }
