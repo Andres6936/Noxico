@@ -99,9 +99,9 @@
     <Reference Include="System.Windows.Forms" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BoardChar.cs" />
-    <Compile Include="BoardDrawing.cs" />
-    <Compile Include="Character.cs" />
+    <Compile Include="BoardChar.cs"/>
+    <Compile Include="BoardDrawing.cs"/>
+    <Compile Include="Character.cs"/>
     <Compile Include="Color.cs"/>
     <Compile Include="CryptStream.cs"/>
     <Compile Include="Culture.cs"/>
@@ -109,31 +109,37 @@
     <Compile Include="Descriptions.cs"/>
     <Compile Include="Dijkstra.cs"/>
     <Compile Include="DungeonGenerator.cs"/>
-    <Compile Include="Editor.cs">
+    <Compile Include="Engine\Editor.cs">
       <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Engine\ErrorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Engine\ErrorForm.Designer.cs">
+      <DependentUpon>ErrorForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Engine\MainForm.cs"/>
     <Compile Include="Engine\MixFileEntry.cs"/>
-    <Compile Include="Entities.cs"/>
-    <Compile Include="ErrorForm.cs">
+    <Compile Include="Engine\UpdateForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ErrorForm.Designer.cs">
-      <DependentUpon>ErrorForm.cs</DependentUpon>
+    <Compile Include="Engine\UpdateForm.Designer.cs">
+      <DependentUpon>UpdateForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Entities.cs"/>
     <Compile Include="fmod.cs"/>
     <Compile Include="i18n.cs"/>
     <Content Include="Guides\ref.png"/>
-    <Content Include="Guides\ref.txt" />
-    <Content Include="mix\fonts\8x16-bold.png" />
-    <None Include="mix\defense.lua" />
-    <None Include="mix\eachturn.lua" />
-    <None Include="mix\fonts\variants.tml" />
-    <None Include="mix\i18n.lua" />
-    <None Include="mix\impediments.tml" />
-    <None Include="mix\init.lua" />
-    <Content Include="mix\lookup.txt" />
-    <Compile Include="Lua.cs" />
+    <Content Include="Guides\ref.txt"/>
+    <Content Include="mix\fonts\8x16-bold.png"/>
+    <None Include="mix\defense.lua"/>
+    <None Include="mix\eachturn.lua"/>
+    <None Include="mix\fonts\variants.tml"/>
+    <None Include="mix\i18n.lua"/>
+    <None Include="mix\impediments.tml"/>
+    <None Include="mix\init.lua"/>
+    <Content Include="mix\lookup.txt"/>
+    <Compile Include="Lua.cs"/>
     <None Include="mix\clutter.tml" />
     <Compile Include="Morph.cs" />
     <Compile Include="Name.cs" />
@@ -144,12 +150,6 @@
     <Compile Include="Subscreens\Controls.cs" />
     <Compile Include="Subscreens\Crafting.cs" />
     <Compile Include="Subscreens\Options.cs" />
-    <Compile Include="UpdateForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="UpdateForm.Designer.cs">
-      <DependentUpon>UpdateForm.cs</DependentUpon>
-    </Compile>
     <Compile Include="WinFormHost.cs">
       <SubType>Form</SubType>
     </Compile>
