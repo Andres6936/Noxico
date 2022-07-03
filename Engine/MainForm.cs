@@ -121,22 +121,24 @@ namespace Noxico.Engine
 			try
 #endif
             {
-                this.Text = "Noxico";
-                this.BackColor = System.Drawing.Color.Black;
-                this.DoubleBuffered = true;
-                this.FormBorderStyle = FormBorderStyle.FixedSingle;
-                this.MaximizeBox = false; //it's about time, too!
-                this.FormClosing += new FormClosingEventHandler(this.Form1_FormClosing);
-                this.KeyDown += new KeyEventHandler(this.Form1_KeyDown);
-                this.KeyPress += new KeyPressEventHandler(this.Form1_KeyPress);
-                this.KeyUp += new KeyEventHandler(this.Form1_KeyUp);
-                this.Icon = global::Noxico.Properties.Resources.app;
-                this.ClientSize = new Size(Program.Cols * cellWidth, Program.Rows * cellHeight);
-                this.Controls.Add(new Label()
+                FormClosing += Form1_FormClosing;
+                KeyDown += Form1_KeyDown;
+                KeyPress += Form1_KeyPress;
+                KeyUp += Form1_KeyUp;
+
+                Text = "Noxico";
+                BackColor = System.Drawing.Color.Black;
+                MaximizeBox = false; //it's about time, too!
+                DoubleBuffered = true;
+                FormBorderStyle = FormBorderStyle.FixedSingle;
+                Icon = Properties.Resources.app;
+                ClientSize = new Size(Program.Cols * cellWidth, Program.Rows * cellHeight);
+
+                Controls.Add(new Label
                 {
                     Text = "Loading...",
                     AutoSize = true,
-                    Font = new System.Drawing.Font("Arial", 24, FontStyle.Bold | FontStyle.Italic),
+                    Font = new Font("Arial", 24, FontStyle.Bold | FontStyle.Italic),
                     ForeColor = System.Drawing.Color.White,
                     Visible = true,
                     Location = new System.Drawing.Point(16, 16)
@@ -154,17 +156,20 @@ namespace Noxico.Engine
                 {
                     if (!UacHelper.IsProcessElevated)
                     {
-                        var proc = new System.Diagnostics.ProcessStartInfo();
-                        proc.UseShellExecute = true;
-                        proc.WorkingDirectory = Environment.CurrentDirectory;
-                        proc.FileName = Application.ExecutablePath;
-                        proc.Verb = "runas";
+                        var proc = new System.Diagnostics.ProcessStartInfo
+                        {
+                            UseShellExecute = true,
+                            WorkingDirectory = Environment.CurrentDirectory,
+                            FileName = Application.ExecutablePath,
+                            Verb = "runas"
+                        };
                         try
                         {
                             System.Diagnostics.Process.Start(proc);
                         }
                         catch
                         {
+                            // ignored
                         }
                     }
 
