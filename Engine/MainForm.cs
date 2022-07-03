@@ -6,6 +6,8 @@ using System.IO;
 using System.Runtime.InteropServices;
 using System.Text.RegularExpressions;
 using System.Windows.Forms;
+using Noxico.Engine.Board;
+using Point = Noxico.Engine.Board.Point;
 using SystemMessageBox = System.Windows.Forms.MessageBox;
 
 namespace Noxico.Engine

@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using Noxico.Engine;
+using Noxico.Engine.Board;
 
 namespace Noxico
 {

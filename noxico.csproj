@@ -109,6 +109,16 @@
     <Compile Include="Descriptions.cs"/>
     <Compile Include="Dijkstra.cs"/>
     <Compile Include="DungeonGenerator.cs"/>
+    <Compile Include="Engine\Board\BoardType.cs"/>
+    <Compile Include="Engine\Board\Fluids.cs"/>
+    <Compile Include="Engine\Board\Point.cs"/>
+    <Compile Include="Engine\Board\Realms.cs"/>
+    <Compile Include="Engine\Board\Rectangle.cs"/>
+    <Compile Include="Engine\Board\SolidityCheck.cs"/>
+    <Compile Include="Engine\Board\Tile.cs"/>
+    <Compile Include="Engine\Board\TileDefinition.cs"/>
+    <Compile Include="Engine\Board\UserMode.cs"/>
+    <Compile Include="Engine\Board\Warp.cs"/>
     <Compile Include="Engine\Editor.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -140,16 +150,16 @@
     <None Include="mix\init.lua"/>
     <Content Include="mix\lookup.txt"/>
     <Compile Include="Lua.cs"/>
-    <None Include="mix\clutter.tml" />
-    <Compile Include="Morph.cs" />
-    <Compile Include="Name.cs" />
-    <Compile Include="PlayerChar.cs" />
-    <Compile Include="SexManager.cs" />
-    <Compile Include="SoundSystem.cs" />
-    <Compile Include="Subscreens\ActionList.cs" />
-    <Compile Include="Subscreens\Controls.cs" />
-    <Compile Include="Subscreens\Crafting.cs" />
-    <Compile Include="Subscreens\Options.cs" />
+    <None Include="mix\clutter.tml"/>
+    <Compile Include="Morph.cs"/>
+    <Compile Include="Name.cs"/>
+    <Compile Include="PlayerChar.cs"/>
+    <Compile Include="SexManager.cs"/>
+    <Compile Include="SoundSystem.cs"/>
+    <Compile Include="Subscreens\ActionList.cs"/>
+    <Compile Include="Subscreens\Controls.cs"/>
+    <Compile Include="Subscreens\Crafting.cs"/>
+    <Compile Include="Subscreens\Options.cs"/>
     <Compile Include="WinFormHost.cs">
       <SubType>Form</SubType>
     </Compile>
