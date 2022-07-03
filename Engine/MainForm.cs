@@ -229,8 +229,8 @@ namespace Noxico.Engine
                 Noxico = new NoxicoGame();
                 Noxico.Initialize(this);
 
-                MouseUp += new MouseEventHandler(MainForm_MouseUp);
-                MouseWheel += new MouseEventHandler(MainForm_MouseWheel);
+                MouseUp += MainForm_MouseUp;
+                MouseWheel += MainForm_MouseWheel;
 
                 GotFocus += (s, e) => { Vista.GamepadFocused = true; };
                 LostFocus += (s, e) => { Vista.GamepadFocused = false; };
