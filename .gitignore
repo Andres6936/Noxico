@@ -5,7 +5,6 @@ diffs.txt
 *.suo
 *.cachefile
 *.mix
-*.nox
 *.user
 desktop.ini
 Japanese/

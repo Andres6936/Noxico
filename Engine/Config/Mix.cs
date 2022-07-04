@@ -15,10 +15,10 @@ namespace Noxico
         /// <summary>
         /// Store the reference to several .tml files used for distinct configuration of App.
         /// </summary>
-        private static readonly Dictionary<string, MixFileEntry> FileList = new Dictionary<string, MixFileEntry>();
+        private static readonly Dictionary<string, MixFileEntry> FileList = new();
 
-        private static readonly Dictionary<string, string> StringCache = new Dictionary<string, string>();
-        private static readonly Dictionary<string, Bitmap> BitmapCache = new Dictionary<string, Bitmap>();
+        private static readonly Dictionary<string, string> StringCache = new();
+        private static readonly Dictionary<string, Bitmap> BitmapCache = new();
 
         /// <summary>
         /// Populates the Mix database for usage
